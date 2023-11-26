@@ -1,106 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Birthday!</title>
+    <title>My GitHub Website</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f0f0f0;
+            background-color: #f5f5f5;
+            color: #333;
             margin: 0;
             padding: 0;
-            overflow: hidden;
         }
 
         header {
-            background-color: #3498db;
+            background-color: #673AB7;
+            color: #fff;
             padding: 20px;
-            color: white;
             text-align: center;
-            font-size: 24px;
-            position: relative;
+            animation: rainbowAnimation 5s infinite;
         }
 
-        header h1 {
-            margin: 0;
+        section {
+            padding: 20px;
         }
 
-        .message-container {
+        footer {
+            background-color: #673AB7;
+            color: #fff;
             text-align: center;
-            padding: 50px;
+            padding: 10px;
         }
 
-        .message {
-            font-size: 32px;
-            font-weight: bold;
-            color: #3498db;
-        }
-
-        .sections {
-            display: flex;
-            justify-content: space-around;
-            padding: 20px;
-        }
-
-        .section {
-            flex: 1;
-            background-color: #ecf0f1;
-            padding: 20px;
-            margin: 10px;
-            border-radius: 10px;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
+        @keyframes rainbowAnimation {
+            0% {
+                background-position: 0% 50%;
             }
-            to {
-                opacity: 1;
+
+            50% {
+                background-position: 100% 50%;
             }
-        }
 
-        header {
-            animation: fadeIn 1.5s ease-in-out;
-        }
-
-        .bounce {
-            animation: bounce 1s infinite alternate;
-        }
-
-        @keyframes bounce {
-            to {
-                transform: translateY(-10px);
+            100% {
+                background-position: 0% 50%;
             }
         }
     </style>
 </head>
+
 <body>
+
     <header>
-        <h1 class="bounce">Happy Birthday!</h1>
+        <h1>Happy Birthday!</h1>
+        <p>Wishing you a day filled with joy and celebration.</p>
     </header>
 
-    <div class="message-container">
-        <p class="message">Wishing you a day filled with joy and laughter!</p>
-    </div>
+    <section>
+        <h2>Section 1</h2>
+        <p>This is where you can write your things.</p>
+    </section>
 
-    <div class="sections">
-        <div class="section">
-            <h2>Section 1</h2>
-            <!-- Your content for section 1 goes here -->
-        </div>
-        <div class="section">
-            <h2>Section 2</h2>
-            <!-- Your content for section 2 goes here -->
-        </div>
-        <div class="section">
-            <h2>Section 3</h2>
-            <!-- Your content for section 3 goes here -->
-        </div>
-    </div>
+    <section>
+        <h2>Section 2</h2>
+        <p>Feel free to add more sections as needed.</p>
+    </section>
 
-    <script>
-        // You can add JavaScript for additional animations or interactivity here
-    </script>
+    <footer>
+        <p>© 2023 Your Name</p>
+    </footer>
+
 </body>
+
 </html>
