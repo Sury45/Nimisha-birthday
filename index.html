@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Birthday Nimisha</title>
+    <title>My GitHub Page</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            margin: 0;
-            overflow: hidden;
+            overflow: hidden; /* Prevents scrollbars due to animation */
         }
 
         header {
-            background: linear-gradient(to right, #3498db, #e74c3c);
+            background-color: #3498db;
             color: #fff;
             padding: 1em;
-            animation: gradientAnimation 10s infinite;
+            font-family: 'Brush Script MT', cursive;
+            font-size: 2em;
         }
 
         main {
@@ -24,17 +24,18 @@
         }
 
         h1 {
-            color: #fff;
+            color: #3498db;
         }
 
         .birthday-message {
-            background: linear-gradient(to right, #3498db, #e74c3c);
+            background: linear-gradient(to right, #ff8a00, #e52e71, #3498db);
             color: #fff;
             padding: 1em;
             margin-top: 2em;
+            animation: colorAnimation 15s infinite;
         }
 
-        @keyframes gradientAnimation {
+        @keyframes colorAnimation {
             0% {
                 background-position: 0% 50%;
             }
@@ -50,7 +51,8 @@
 <body>
 
     <header>
-        <h1>Happy Birthday Nimisha!</h1>
+        <h1>Welcome to My GitHub Page</h1>
+        <p>Happy Birthday Nimisha!</p>
     </header>
 
     <main>
