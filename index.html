@@ -1,71 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Birthday Website</title>
+    <title>My GitHub Website</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
             background-color: #f0f0f0;
+            color: #333;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
         }
 
         header {
             background-color: #3498db;
             color: #fff;
+            padding: 20px;
             text-align: center;
-            padding: 1em;
+            position: relative;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        header p {
+            font-size: 1.2em;
         }
 
         section {
-            margin: 20px;
             padding: 20px;
+            margin: 20px;
             background-color: #fff;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-        h2 {
-            color: #3498db;
-        }
-
-        p {
-            color: #333;
-        }
-
         footer {
             text-align: center;
-            padding: 1em;
+            padding: 10px;
             background-color: #3498db;
             color: #fff;
             position: fixed;
-            bottom: 0;
             width: 100%;
+            bottom: 0;
+        }
+
+        @keyframes colorChange {
+            0% {
+                color: #3498db;
+            }
+
+            50% {
+                color: #e74c3c;
+            }
+
+            100% {
+                color: #3498db;
+            }
+        }
+
+        header h1 {
+            animation: colorChange 3s infinite;
         }
     </style>
 </head>
-<body>
 
+<body>
     <header>
         <h1>Happy Birthday!</h1>
+        <p>Wishing you a fantastic day filled with joy and celebration!</p>
     </header>
 
     <section>
-        <h2>Birthday Wishes Section</h2>
-        <p>Write your birthday wishes and thoughts here...</p>
+        <h2>Section 1</h2>
+        <p>This is where you can write your content for section 1.</p>
     </section>
 
     <section>
-        <h2>Another Section</h2>
-        <p>This is another section where you can write more content.</p>
+        <h2>Section 2</h2>
+        <p>This is where you can write your content for section 2.</p>
     </section>
 
     <footer>
         <p>© 2023 Your Name</p>
     </footer>
-
 </body>
+
 </html>
+
