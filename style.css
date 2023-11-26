@@ -1,0 +1,13 @@
+body {
+    font-family: sans-serif;
+    background-animation: infinite linear-gradient(to right, purple, pink, blue);
+    background-size: cover;
+    animation-duration: 10s;
+}
+
+.birthday-message {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+}
