@@ -8,7 +8,8 @@
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            overflow: hidden; /* Prevents scrollbars due to animation */
+            margin: 0;
+            overflow: hidden;
         }
 
         header {
@@ -16,26 +17,18 @@
             color: #fff;
             padding: 1em;
             font-family: 'Brush Script MT', cursive;
-            font-size: 2em;
+            font-size: 24px;
         }
 
         main {
             padding: 2em;
-        }
-
-        h1 {
-            color: #3498db;
-        }
-
-        .birthday-message {
-            background: linear-gradient(to right, #ff8a00, #e52e71, #3498db);
+            background: linear-gradient(45deg, #3498db, #e74c3c, #9b59b6, #2ecc71);
+            background-size: 400% 400%;
+            animation: gradientAnimation 15s ease infinite;
             color: #fff;
-            padding: 1em;
-            margin-top: 2em;
-            animation: colorAnimation 15s infinite;
         }
 
-        @keyframes colorAnimation {
+        @keyframes gradientAnimation {
             0% {
                 background-position: 0% 50%;
             }
@@ -46,13 +39,23 @@
                 background-position: 0% 50%;
             }
         }
+
+        h1 {
+            color: #3498db;
+        }
+
+        .birthday-message {
+            background-color: #3498db;
+            color: #fff;
+            padding: 1em;
+            margin-top: 2em;
+        }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Welcome to My GitHub Page</h1>
-        <p>Happy Birthday Nimisha!</p>
+        <h1>Happy Birthday Nimisha!</h1>
     </header>
 
     <main>
