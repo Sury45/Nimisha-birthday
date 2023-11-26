@@ -7,63 +7,46 @@
   <style>
     body {
       margin: 0;
+      padding: 0;
       overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background: linear-gradient(to right, #ff99cc, #cc99ff, #99ccff);
+      animation: waveBackground 5s linear infinite;
     }
 
-    #birthday-message {
+    h1 {
+      font-family: 'Arial', sans-serif;
+      font-size: 3em;
+      color: #fff;
       text-align: center;
-      padding: 100px;
-      font-size: 24px;
-      color: white;
     }
 
-    #custom-message {
+    .custom-message {
+      font-family: 'Arial', sans-serif;
+      font-size: 1.5em;
+      color: #fff;
       text-align: center;
-      padding: 20px;
-      font-size: 18px;
-      color: white;
+      margin-top: 20px;
     }
 
-    #background {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-      animation: colorInfinity 20s linear infinite;
-    }
-
-    @keyframes colorInfinity {
+    @keyframes waveBackground {
       0% {
-        background: linear-gradient(45deg, #FF6B6B, #FF8E53, #FFABAB);
-      }
-      25% {
-        background: linear-gradient(45deg, #A18CD1, #FBC2EB);
-      }
-      50% {
-        background: linear-gradient(45deg, #12C2E9, #C471ED, #F64F59);
-      }
-      75% {
-        background: linear-gradient(45deg, #56CCF2, #2F80ED);
+        background-position: 0% 0%;
       }
       100% {
-        background: linear-gradient(45deg, #FF6B6B, #FF8E53, #FFABAB);
+        background-position: 100% 0%;
       }
     }
   </style>
 </head>
 <body>
-  <div id="background"></div>
-  <div id="birthday-message">
-    <p>Happy Birthday!</p>
+  <h1>Happy Birthday!</h1>
+  <div class="custom-message">
+    <!-- Add your custom message here -->
+    <p>Celebrate this special day with joy and laughter!</p>
   </div>
-  <div id="custom-message">
-    <p>Write your custom messages here!</p>
-  </div>
-
-  <script>
-    // You can add JavaScript code here if needed
-  </script>
 </body>
 </html>
