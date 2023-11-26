@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,68 +7,83 @@
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f5f5f5;
+            background-color: #f0f0f0;
             color: #333;
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
 
         header {
-            background-color: #673AB7;
+            background-color: #24292e;
             color: #fff;
             padding: 20px;
             text-align: center;
-            animation: rainbowAnimation 5s infinite;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
         }
 
         section {
-            padding: 20px;
+            padding: 30px;
+            background-color: #fff;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation: slideIn 1s ease-in-out;
         }
 
-        footer {
-            background-color: #673AB7;
-            color: #fff;
+        @keyframes slideIn {
+            0% { transform: translateY(-20px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+
+        .birthday-message {
+            color: #ff4081;
+            font-size: 24px;
             text-align: center;
-            padding: 10px;
+            margin-bottom: 20px;
         }
 
-        @keyframes rainbowAnimation {
-            0% {
-                background-position: 0% 50%;
-            }
+        .pink-section {
+            background-color: #ff4081;
+            color: #fff;
+        }
 
-            50% {
-                background-position: 100% 50%;
-            }
-
-            100% {
-                background-position: 0% 50%;
-            }
+        .purple-section {
+            background-color: #7c4dff;
+            color: #fff;
         }
     </style>
 </head>
-
 <body>
-
     <header>
         <h1>Happy Birthday!</h1>
-        <p>Wishing you a day filled with joy and celebration.</p>
+        <p class="birthday-message">Wishing you a fantastic day filled with joy and celebration!</p>
     </header>
 
-    <section>
-        <h2>Section 1</h2>
-        <p>This is where you can write your things.</p>
+    <section class="pink-section">
+        <h2>Pink Section</h2>
+        <p>This is a pink-colored section where you can write your content.</p>
+    </section>
+
+    <section class="purple-section">
+        <h2>Purple Section</h2>
+        <p>This is a purple-colored section where you can write more of your content.</p>
     </section>
 
     <section>
-        <h2>Section 2</h2>
-        <p>Feel free to add more sections as needed.</p>
+        <h2>Another Section</h2>
+        <p>This is a general section with the default background color. Feel free to add more sections as needed.</p>
     </section>
 
-    <footer>
-        <p>© 2023 Your Name</p>
-    </footer>
+    <!-- Add more sections as needed -->
 
+    <script>
+        // You can add JavaScript code here for additional functionality
+    </script>
 </body>
-
 </html>
