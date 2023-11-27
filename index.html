@@ -1,28 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Birthday!</title>
-
-    <style>
-        body {
-            font-family: sans-serif;
-            animation: infinite linear-gradient(to right, purple, pink, blue) 10s forwards;
-            background-size: cover;
-        }
-
-        .birthday-message {
-            text-align: center;
-            color: white;
-            font-size: 40px;
-            font-weight: bold;
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Birthday Message</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+      background-size: 200% 200%;
+      animation: wave 3s ease infinite;
+    }
+    @keyframes wave {
+      0% { background-position: 0% 50% }
+      50% { background-position: 100% 50% }
+      100% { background-position: 0% 50% }
+    }
+  </style>
 </head>
 <body>
-    <div class="birthday-message">
-        Happy Birthday!
-    </div>
+  <h1>Birthday Message</h1>
+  <section>
+    <h2>Custom Message Section 1</h2>
+    <p>Write your custom message here</p>
+  </section>
+  <section>
+    <h2>Custom Message Section 2</h2>
+    <p>Write your custom message here</p>
+  </section>
+  <section>
+    <h2>Custom Message Section 3</h2>
+    <p>Write your custom message here</p>
+  </section>
 </body>
 </html>
