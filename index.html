@@ -21,6 +21,15 @@
       font-weight: bold;
       color: goldenrod;
       font-size: 60px;
+      animation: glow 1s ease-in-out infinite alternate;
+    }
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 10px #ff00de, 0 0 20px #ff00de, 0 0 30px #ff00de;
+      }
+      to {
+        text-shadow: 0 0 20px #ff00de, 0 0 30px #ff00de, 0 0 40px #ff00de;
+      }
     }
   </style>
 </head>
