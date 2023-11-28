@@ -26,24 +26,12 @@
       color: #ffcc29;
       font-size: 60px;
       margin-bottom: 10px;
-      overflow: hidden;
-      white-space: nowrap;
-      animation: glow 1s ease-in-out infinite alternate, typing 4s steps(20) forwards;
+      opacity: 0;
+      animation: fadeIn 1s ease forwards;
     }
-    @keyframes glow {
-      from {
-        text-shadow: 0 0 10px #ff00de, 0 0 20px #ff00de, 0 0 30px #ff00de;
-      }
+    @keyframes fadeIn {
       to {
-        text-shadow: 0 0 20px #ff00de, 0 0 30px #ff00de, 0 0 40px #ff00de;
-      }
-    }
-    @keyframes typing {
-      from {
-        width: 0;
-      }
-      to {
-        width: 100%;
+        opacity: 1;
       }
     }
     section {
@@ -55,7 +43,7 @@
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       margin-bottom: 20px;
       opacity: 0;
-      animation: fadeIn 5s ease forwards;
+      animation: fadeIn 1s ease forwards;
     }
     @keyframes fadeIn {
       to {
