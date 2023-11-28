@@ -11,11 +11,13 @@
       animation: wave 3s ease infinite;
       text-align: center;
     }
+
     @keyframes wave {
       0% { background-position: 0% 50% }
       50% { background-position: 100% 50% }
       100% { background-position: 0% 50% }
     }
+
     h1 {
       font-family: 'Brush Script MT', cursive;
       font-weight: bold;
@@ -23,6 +25,7 @@
       font-size: 60px;
       animation: glow 1s ease-in-out infinite alternate;
     }
+
     @keyframes glow {
       from {
         text-shadow: 0 0 10px #ff00de, 0 0 20px #ff00de, 0 0 30px #ff00de;
@@ -31,14 +34,24 @@
         text-shadow: 0 0 20px #ff00de, 0 0 30px #ff00de, 0 0 40px #ff00de;
       }
     }
+
     section {
       color: white;
+      font-size: 30px;
+      position: relative; /* Added to position the heart within the section */
     }
+
     .heart {
-      color: red;
-      animation: beat 1s ease-in-out infinite;
+      position: absolute;
+      top: 50%; /* Center the heart vertically */
+      left: 50%; /* Center the heart horizontally */
+      transform: translate(-50%, -50%);
+      width: 50px; /* Adjust the size of the heart */
+      height: auto;
+      animation: heartbeat 1s ease infinite;
     }
-    @keyframes beat {
+
+    @keyframes heartbeat {
       0%, 100% {
         transform: scale(1);
       }
@@ -51,6 +64,8 @@
 <body>
   <h1>Happy Birthday Nimisha♥️</h1>
   <section>
+    <!-- Red heart icon -->
+    <div class="heart">&#10084;</div>
     <p>Tere is khaas din par, main tujhe dher saara pyaar bhejta hoon meri jaan nimi. Tu meri zindagi mein ek khaas jagah rakhthi hai, aur main hamesha tere saath hoon. Teri muskurahat meri duniya ko roshan karti hai.</p>
   </section>
   <section>
@@ -60,6 +75,5 @@
     <h2>Custom Message Section 3</h2>
     <p>Write your custom message here</p>
   </section>
-  <div class="heart">❤️</div>
 </body>
 </html>
