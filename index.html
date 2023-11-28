@@ -11,8 +11,6 @@
       animation: wave 3s ease infinite;
       text-align: center;
       margin: 0;
-      /* height: 100vh; */
-      /* overflow: hidden; */
       font-family: 'Verdana', sans-serif;
     }
     @keyframes wave {
@@ -38,7 +36,7 @@
         text-shadow: 0 0 20px #ff00de, 0 0 30px #ff00de, 0 0 40px #ff00de;
       }
     }
-    @keyframes fade out{
+    @keyframes typing {
       from {
         width: 0;
       }
@@ -62,6 +60,11 @@
         opacity: 1;
       }
     }
+    /* Style for the audio player */
+    audio {
+      width: 100%;
+      margin-top: 20px;
+    }
   </style>
 </head>
 <body>
@@ -70,7 +73,7 @@
     <p>Tere is khaas din par, main tujhe dher saara pyaar bhejta hoon meri jaan Nimisha. Tu meri zindagi mein ek khaas jagah rakhthi hai, aur main hamesha tere saath hoon. Teri muskurahat meri duniya ko roshan karti hai.</p>
   </section>
   <section>
-    <p>Teri khushiyan meri khushiyan hain, aur main chahta hoon ki tu hamesha khush rahein. Jo bhi tu chahti hai, wahi meri dua hai ki tujhe mile.Aaj ke iss khaas din par, main aapko promise karta hun ki main hamesha aapke liye ek aisa raaga banne ki koshish karunga jo aapko hamesha khush rakhe aur aapko hamesha sukoon de. May your life be filled with endless love, laughter, and harmony.</p>
+    <p>Teri khushiyan meri khushiyan hain, aur main chahta hoon ki tu hamesha khush rahein. Jo bhi tu chahti hai, wahi meri dua hai ki tujhe mile.</p>
   </section>
   <section>
     <p>May this birthday be filled with laughter, joy, aur cherished memories jo hum hamesha yaad karenge. Main har ek moment ko cherish karta hun jo hum saath mein spend karte hain, aur main bekarari se intezaar kar raha hun un countless adventures ka jo aane wale saalon mein hamare intezaar kar rahe hain.</p>
@@ -79,5 +82,10 @@
   <section>
     <p>This is a new section with similar styling. You can add your content here.</p>
   </section>
+  <!-- Audio Player -->
+  <audio controls autoplay>
+    <source src="01-Monk-Turner-Fascinoma-Its-Your-Birthday(chosic.com).mp3" type="audio/mp3">
+    Your browser does not support the audio tag.
+  </audio>
 </body>
 </html>
