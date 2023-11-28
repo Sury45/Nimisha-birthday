@@ -10,14 +10,15 @@
       background-size: 200% 200%;
       animation: wave 3s ease infinite;
       text-align: center;
+      margin: 0;
+      height: 100vh;
+      overflow: hidden;
     }
-
     @keyframes wave {
       0% { background-position: 0% 50% }
       50% { background-position: 100% 50% }
       100% { background-position: 0% 50% }
     }
-
     h1 {
       font-family: 'Brush Script MT', cursive;
       font-weight: bold;
@@ -25,7 +26,6 @@
       font-size: 60px;
       animation: glow 1s ease-in-out infinite alternate;
     }
-
     @keyframes glow {
       from {
         text-shadow: 0 0 10px #ff00de, 0 0 20px #ff00de, 0 0 30px #ff00de;
@@ -34,23 +34,22 @@
         text-shadow: 0 0 20px #ff00de, 0 0 30px #ff00de, 0 0 40px #ff00de;
       }
     }
-
     section {
-      color: blue;
+      color: white;
       font-size: 30px;
-      position: relative; /* Added to position the heart within the section */
+      padding: 20px; /* Add padding for better readability */
     }
-
     .heart {
+      width: 30px;
+      height: 30px;
+      background-color: red;
       position: absolute;
-      top: 50%; /* Center the heart vertically */
-      left: 50%; /* Center the heart horizontally */
+      top: 50%;
+      left: 50%;
       transform: translate(-50%, -50%);
-      width: 50px; /* Adjust the size of the heart */
-      height: auto;
-      animation: heartbeat 1s ease infinite;
+      border-radius: 50%;
+      animation: heartbeat 1s ease-in-out infinite;
     }
-
     @keyframes heartbeat {
       0%, 100% {
         transform: scale(1);
@@ -62,17 +61,17 @@
   </style>
 </head>
 <body>
+  <div class="heart"></div>
   <h1>Happy Birthday Nimisha♥️</h1>
   <section>
-    <!-- Red heart icon -->
-    <div class="heart">&#10084;</div>
-    <p>Tere is khaas din par, main tujhe dher saara pyaar bhejta hoon meri jaan nimi. Tu meri zindagi mein ek khaas jagah rakhthi hai, aur main hamesha tere saath hoon. Teri muskurahat meri duniya ko roshan karti hai Aap meri zindagi mein ek aisa anmol tohfa hain, jiski kadar mein lafz kam pad jate hain. Aapke sath mein har din ek naya sapna hai, aur aapki muskurahat se meri zindagi mein chamak aati hai..</p>
+    <p>Tere is khaas din par, main tujhe dher saara pyaar bhejta hoon meri jaan nimi. Tu meri zindagi mein ek khaas jagah rakhthi hai, aur main hamesha tere saath hoon. Teri muskurahat meri duniya ko roshan karti hai.</p>
   </section>
   <section>
     <p>Teri khushiyan meri khushiyan hain, aur main chahta hoon ki tu hamesha khush rahe. Jo bhi tu chahti hai, wahi meri dua hai ki tujhe mile.</p>
   </section>
   <section>
-    <p>May this birthday be filled with laughter, joy, aur cherished memories jo hum hamesha yaad karenge. Main har ek moment ko cherish karta hun jo hum saath mein spend karte hain, aur main bekarari se intezaar kar raha hun un countless adventures ka jo aane wale saalon mein hamare intezaar kar rahe hain,Aaj ke iss khaas din par, main aapko har khushi, har sapne ki poore aur har khushi ki dua karta hun. May your life be filled with endless love, laughter, and joy.</p>
+    <h2>Custom Message Section 3</h2>
+    <p>Write your custom message here</p>
   </section>
 </body>
 </html>
