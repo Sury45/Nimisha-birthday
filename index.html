@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
@@ -20,7 +20,7 @@
       font-family: 'Brush Script MT', cursive;
       font-weight: bold;
       color: goldenrod;
-      font-size: 60px; /* Changed the font size here */
+      font-size: 60px;
       animation: glow 1s ease-in-out infinite alternate;
     }
     @keyframes glow {
@@ -34,30 +34,32 @@
     section {
       color: white;
     }
-
+    .heart {
+      color: red;
+      animation: beat 1s ease-in-out infinite;
+    }
+    @keyframes beat {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.2);
       }
     }
   </style>
 </head>
 <body>
-  <div class="heart"></div>
-  <script src="script.js"></script>
-  </style>
-</head>
-<body>
   <h1>Happy Birthday Nimisha♥️</h1>
   <section>
-
-    <p>Tere is khaas din par, main tujhe dher saara pyaar bhejta hoon meri jaan nimi. Tu meri zindagi mein ek khaas jagah rakhthi hai, aur main hamesha tere saath hoon. Teri muskurahat meri duniya ko roshan karti hai.</p></p>
+    <p>Tere is khaas din par, main tujhe dher saara pyaar bhejta hoon meri jaan nimi. Tu meri zindagi mein ek khaas jagah rakhthi hai, aur main hamesha tere saath hoon. Teri muskurahat meri duniya ko roshan karti hai.</p>
   </section>
   <section>
-
     <p>Teri khushiyan meri khushiyan hain, aur main chahta hoon ki tu hamesha khush rahe. Jo bhi tu chahti hai, wahi meri dua hai ki tujhe mile.</p>
   </section>
   <section>
     <h2>Custom Message Section 3</h2>
     <p>Write your custom message here</p>
   </section>
-  <script src="script.js"></script>
+  <div class="heart">❤️</div>
 </body>
 </html>
