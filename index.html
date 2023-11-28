@@ -26,7 +26,9 @@
       color: #ffcc29;
       font-size: 60px;
       margin-bottom: 10px;
-      animation: glow 1s ease-in-out infinite alternate, bounce 1s ease infinite;
+      overflow: hidden;
+      white-space: nowrap;
+      animation: glow 1s ease-in-out infinite alternate, typing 4s steps(20) forwards;
     }
     @keyframes glow {
       from {
@@ -36,15 +38,12 @@
         text-shadow: 0 0 20px #ff00de, 0 0 30px #ff00de, 0 0 40px #ff00de;
       }
     }
-    @keyframes bounce {
-      0%, 20%, 50%, 80%, 100% {
-        transform: translateY(0);
+    @keyframes typing {
+      from {
+        width: 0;
       }
-      40% {
-        transform: translateY(-20px);
-      }
-      60% {
-        transform: translateY(-10px);
+      to {
+        width: 100%;
       }
     }
     section {
@@ -63,34 +62,6 @@
         opacity: 1;
       }
     }
-    .heart {
-      width: 50px;
-      height: 50px;
-      background-color: #ff3d67;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%) rotate(0deg);
-      border-radius: 50%;
-      animation: heartbeat 1s ease-in-out infinite, rotateHeart 5s linear infinite;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
-    @keyframes heartbeat {
-      0%, 100% {
-        transform: scale(1);
-      }
-      50% {
-        transform: scale(1.2);
-      }
-    }
-    @keyframes rotateHeart {
-      0%, 100% {
-        transform: rotate(0deg);
-      }
-      50% {
-        transform: rotate(180deg);
-      }
-    }
   </style>
 </head>
 <body>
@@ -104,6 +75,5 @@
   <section>
     <p>May this birthday be filled with laughter, joy, aur cherished memories jo hum hamesha yaad karenge. Main har ek moment ko cherish karta hun jo hum saath mein spend karte hain, aur main bekarari se intezaar kar raha hun un countless adventures ka jo aane wale saalon mein hamare intezaar kar rahe hain.</p>
   </section>
-  <div class="heart"></div>
 </body>
 </html>
