@@ -26,7 +26,7 @@
       color: #ffcc29;
       font-size: 60px;
       margin-bottom: 10px;
-      animation: glow 1s ease-in-out infinite alternate;
+      animation: glow 1s ease-in-out infinite alternate, bounce 1s ease infinite;
     }
     @keyframes glow {
       from {
@@ -34,6 +34,17 @@
       }
       to {
         text-shadow: 0 0 20px #ff00de, 0 0 30px #ff00de, 0 0 40px #ff00de;
+      }
+    }
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+      }
+      40% {
+        transform: translateY(-20px);
+      }
+      60% {
+        transform: translateY(-10px);
       }
     }
     section {
@@ -44,6 +55,13 @@
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       margin-bottom: 20px;
+      opacity: 0;
+      animation: fadeIn 1s ease forwards;
+    }
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
     }
     .heart {
       width: 50px;
@@ -52,9 +70,9 @@
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%) rotate(0deg);
       border-radius: 50%;
-      animation: heartbeat 1s ease-in-out infinite;
+      animation: heartbeat 1s ease-in-out infinite, rotateHeart 5s linear infinite;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
     @keyframes heartbeat {
@@ -65,20 +83,27 @@
         transform: scale(1.2);
       }
     }
+    @keyframes rotateHeart {
+      0%, 100% {
+        transform: rotate(0deg);
+      }
+      50% {
+        transform: rotate(180deg);
+      }
+    }
   </style>
 </head>
 <body>
-  </div>
   <h1>Happy Birthday Nimisha♥️</h1>
   <section>
     <p>Tere is khaas din par, main tujhe dher saara pyaar bhejta hoon meri jaan Nimisha. Tu meri zindagi mein ek khaas jagah rakhthi hai, aur main hamesha tere saath hoon. Teri muskurahat meri duniya ko roshan karti hai.</p>
   </section>
   <section>
-    <p>Teri khushiyan meri khushiyan hain, aur main chahta hoon ki tu hamesha khush rahe. Jo bhi tu chahti hai, wahi meri dua hai ki tujhe mile.</p>
+    <p>Teri khushiyan meri khushiyan hain, aur main chahta hoon ki tu hamesha khush rahein. Jo bhi tu chahti hai, wahi meri dua hai ki tujhe mile.</p>
   </section>
   <section>
-  
     <p>May this birthday be filled with laughter, joy, aur cherished memories jo hum hamesha yaad karenge. Main har ek moment ko cherish karta hun jo hum saath mein spend karte hain, aur main bekarari se intezaar kar raha hun un countless adventures ka jo aane wale saalon mein hamare intezaar kar rahe hain.</p>
   </section>
+  <div class="heart"></div>
 </body>
 </html>
